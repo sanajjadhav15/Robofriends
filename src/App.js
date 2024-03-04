@@ -34,9 +34,11 @@ function App() {
   }, [search, data])
 
   if (loading) {
+    return(
     <Container fluid className='d-flex justify-content-center align-items-center' style={{height: '100vh'}}>
-    return <Spinner animation="border" role="status" style={{height: '100px', width:'100px', color: '#fff'}} />
+     <Spinner animation="border" role="status" style={{height: '100px', width:'100px', color: '#fff'}} />
     </Container>
+    )
   }
 
   return (
